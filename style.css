@@ -1,0 +1,73 @@
+*{
+   box-sizing: border-box;
+   
+}
+
+span{font-size: small;}
+
+h1, #description{
+    text-align: center;
+    font-family: sans-serif;
+    color: #E7A2D1;
+}
+
+body{
+   
+    background-image: linear-gradient(to bottom, #c3143173, rgba(117, 19, 93, 0.73)), url(https://images-na.ssl-images-amazon.com/images/I/81kTrSqMuLL._AC_SL1135_.jpg);
+    background-size: cover; /*#c31432 #240b36*/
+    color: white;
+}
+
+form{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    font-size: large;
+}
+
+.container-form{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .2);
+    background-color: #3C1742;
+    color: #E7A2D1;
+    align-content: center;
+    padding: 1em;
+    border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px ridge #000000;
+    font-family: sans-serif;
+    padding: 10px 1.5em;
+}
+
+.top-text{
+    padding-bottom: 1em;
+}
+
+input,select{
+    width: 100%;
+    height: 30px;
+}
+
+input,select,textarea,button{
+    border-radius: 2px 2px 2px 2px;
+    border: none;
+    padding: 0.375rem 0.55rem;
+}
+
+input[type="radio"],[type="checkbox"]{
+    width: initial;
+}
+
+label{
+    display: flex;
+    align-items: center;
+}
+
+textarea{
+    width: 100%;
+    resize: vertical;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+}

@@ -3,54 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">Survey Form | FreecodeCamp</h1>
-    <p id="description">A practice to make a survey form</p>
+    <div class="header-form">
+        <h1 id="title">Survey Form | FreecodeCamp</h1>
+        <p id="description">A practice to make a survey form</p>
+    </div>
     <form id="survey-form">
-        
-        <label for="name-label">Name:</label>
-        <input type="text" id="name-label" name="name-label" placeholder="Alan Torres" required>
-
-        <label for="email-label">Email:</label>
-        <input type="email" id="email-label" name="email-label" placeholder="michi@gmail.com" required>
-
-        <!-- GONNA BE HONEST I DON'T KNOW WHAT TO PUT HERE -->
-        <label for="number-label">Number:</label> 
-        <input type="number" id="number-label" name="number-label" min="1" max="9" placeholder="1234" required>
-
-        <p>Select the one that describe your current situation</p>
-        <select name="dropdown" id="dropdown" required>
-            <option value="" disabled selected >Current situation</option>
-            <option value="student">Student</option>
-            <option value="job">Full Time Job</option>
-            <option value="partTime">Part Time job</option>>
-            <option value="preferNo">Prefer not to say</option>
-        </select>
-        <p></p>
-
-        <!-- Sort Alphabetically -->
-        <p>What language are you interested in?</p>
-        
-        <label for="java"><input type="checkbox" name="java" id="java" value="java">Java</label>
-        <label for="c#"><input type="checkbox" name="c#" id="c#">C#</label>
-        <label for="javascript"><input type="checkbox" name="javascript" id="javascript">Javascript</label>
-        <label for="python"><input type="checkbox" name="python" id="python">Python</label>
-        <label for="c++"><input type="checkbox" name="c++" id="c++">C++</label>
-        <label for="c"><input type="checkbox" name="c" id="c">C</label>
-        <label for="php"><input type="checkbox" name="php" id="php">PHP</label>
-        <label for="ruby"><input type="checkbox" name="ruby" id="ruby">Ruby</label>
-        <label for="go"><input type="checkbox" name="go" id="go">GO</label>
-        <label for="rust"><input type="checkbox" name="rust" id="rust">Rust</label>
-        <label for="kotlin"><input type="checkbox" name="kotlin" id="kotlin">Kotlin</label>
-        <label for="swift"><input type="checkbox" name="swift" id="swift">Swift</label>
-        <p></p>
-        
-        <p>What question you could add here?</p>
-        <textarea name="question" id="question" placeholder="Insert a miawssage"></textarea>
-
-        <button is="submit">Submit</button>
+        <div class="container-form">
+            <div class="form-question">
+                <p>
+                    <label for="name-label" class="top-text">Name:</label>
+                    <input type="text" id="name-label" name="name-label" placeholder="Alan Torres" required>
+                </p>
+            </div>
+            <div class="form-question">
+                <p>
+                    <label for="email-label" class="top-text">Email:</label>
+                    <input type="email" id="email-label" name="email-label" placeholder="michi@gmail.com" required>
+                </p>
+            </div>
+            <div class="form-question">
+                <p> <!-- GONNA BE HONEST I DON'T KNOW WHAT TO PUT HERE -->
+                    <label for="number-label" class="top-text">Age: <span>(optional)</span> </label> 
+                    <input type="number" id="number-label" name="number-label" min="1" max="9" placeholder="1234" required>
+                </p>
+            </div>
+            <div class="form-question">
+                <p>Select the one that describe your current situation</p>
+                    <select name="dropdown" id="dropdown" required>
+                        <option value="" disabled selected>Current situation</option>
+                        <option value="student">Student</option>
+                        <option value="job">Full Time Job</option>
+                        <option value="partTime">Part Time job</option>>
+                        <option value="preferNo">Prefer not to say</option>
+                    </select>
+            </div>
+            <div class="form-question"> <!-- Sort Alphabetically -->
+                <p>What language are you interested in?</p>
+                <p>
+                    <label for="java">      <input type="checkbox" name="java" id="java" value="java">Java</label>
+                    <label for="c#">        <input type="checkbox" name="c#" id="c#">C#</label>
+                    <label for="javascript"><input type="checkbox" name="javascript" id="javascript">Javascript</label>
+                    <label for="python">    <input type="checkbox" name="python" id="python">Python</label>
+                    <label for="c++">       <input type="checkbox" name="c++" id="c++">C++</label>
+                    <label for="c">         <input type="checkbox" name="c" id="c">C</label>
+                    <label for="php">       <input type="checkbox" name="php" id="php">PHP</label>
+                    <label for="ruby">      <input type="checkbox" name="ruby" id="ruby">Ruby</label>
+                    <label for="go">        <input type="checkbox" name="go" id="go">GO</label>
+                    <label for="rust">      <input type="checkbox" name="rust" id="rust">Rust</label>
+                    <label for="kotlin">    <input type="checkbox" name="kotlin" id="kotlin">Kotlin</label>
+                    <label for="swift">     <input type="checkbox" name="swift" id="swift">Swift</label>
+                </p>
+            </div>
+            <div class="form-question">
+                <p>Do you recommend FreecodeCamp?</p>
+                    <label><input type="radio" name="radio" id="absol">Absolutely not</label>
+                    <label><input type="radio" name="radio" id="not-sure">Not sure</label>
+                    <label><input type="radio" name="radio" id="sure">Sure, why not</label>
+                    <label><input type="radio" name="radio" id="best">It's the best!</label>
+            </div>
+            <div class="form-question">
+                <p>What question you could add here?</p>
+                <textarea name="question" id="question" placeholder="Insert a miawssage"></textarea>
+            </div>
+            <div class="form-question">
+                <p>
+                    <button is="submit">Submit</button>
+                </p>
+            </div>
+        </div>
     </form>
 </body>
 </html>

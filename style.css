@@ -5,21 +5,34 @@
 
 span{font-size: small;}
 
+/*centrarlo*/
 h1, #description{
     text-align: center;
     font-family: sans-serif;
-    color: #E7A2D1;
+    color: aliceblue;
 }
 
+.header-form{
+    border-color: #7378E4;
+    
+}
+
+/*.background-image{
+    
+}*/
+
 body{
-   
-    background-image: linear-gradient(to bottom, #c3143173, rgba(117, 19, 93, 0.73)), url(https://images-na.ssl-images-amazon.com/images/I/81kTrSqMuLL._AC_SL1135_.jpg);
-    background-size: cover; /*#c31432 #240b36*/
+    background-image: linear-gradient(45deg, #4188FA, #7378E4,#8D67CC,#9B58B2,#A24A97,#A23F7D);
+    /*, url(https://images-na.ssl-images-amazon.com/images/I/81kTrSqMuLL._AC_SL1135_.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    resize: none;
     color: white;
 }
 
 form{
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 15px;
@@ -51,6 +64,7 @@ input,select,textarea,button{
     border-radius: 2px 2px 2px 2px;
     border: none;
     padding: 0.375rem 0.55rem;
+    font-size: inherit;
 }
 
 input[type="radio"],[type="checkbox"]{
@@ -65,9 +79,22 @@ label{
 textarea{
     width: 100%;
     resize: vertical;
+    height: 150px;
+}
+
+#language-interested{
+    padding-top: 10px;
 }
 
 button{
     width: 100%;
     height: 40px;
+    background-color: #833e8d;
+    color: aliceblue;
+    cursor: pointer;
+    transition:all 0.3s ease-in;
+}
+
+button:hover{
+        box-shadow: inset 0 0 0 25px #b053be;
 }
